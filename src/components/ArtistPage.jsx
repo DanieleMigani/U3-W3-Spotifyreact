@@ -92,7 +92,7 @@ const ArtistPage = (props) => {
                       {
                         el.title.length < 16
                           ? `${el.title}`
-                          : `${el.title.substring(0, 16)}...` // setting the track title, if it's longer than 16 chars cuts the rest
+                          : `${el.title.substring(0, 16)}...` 
                       }
                     </p>
                     <Link to="/album" className="text-decoration-none text-white">
@@ -100,7 +100,7 @@ const ArtistPage = (props) => {
                       {
                         el.album.title.length < 16
                           ? `${el.album.title}`
-                          : `${el.album.title.substring(0, 16)}...` // setting the track title, if it's longer than 16 chars cuts the rest
+                          : `${el.album.title.substring(0, 16)}...` 
                       }
                     </Link>
                   </div>

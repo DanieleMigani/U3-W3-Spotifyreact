@@ -30,7 +30,7 @@ const AlbumList = (props) => {
 
   useEffect(() => {
     getTracks();
-  }, [getTracks]); // Include getTracks in the dependency array
+  }, [getTracks]); 
 
   return (
     <Col className="col-12 col-md-9 offset-md-3 HomePage">
@@ -80,11 +80,11 @@ const AlbumList = (props) => {
                     <p className="text-white mt-3">{el.title}</p>
                     <p className="text-white">
                       {Math.floor(
-                        parseInt(el.duration) / 60 // setting the duration minutes
+                        parseInt(el.duration) / 60 
                       )}
                       :
                       {parseInt(el.duration) % 60 < 10
-                        ? "0" + (parseInt(el.duration) % 60) // checking che duration seconds, if they are less than 10 a 0 is prefixed
+                        ? "0" + (parseInt(el.duration) % 60) 
                         : parseInt(el.duration) % 60}
                     </p>
                   </div>

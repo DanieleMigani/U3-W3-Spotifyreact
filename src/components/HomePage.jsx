@@ -23,9 +23,9 @@ const HomePage = (props) => {
           method: "GET",
           headers,
         }
-      ); // gets the information
+      ); 
       if (res.ok) {
-        let data = await res.json(); // transforms the response to json
+        let data = await res.json(); 
         let sonoHome = data.data;
         switch (genere) {
           case "rock":
@@ -89,11 +89,11 @@ const HomePage = (props) => {
     let hipHopRandomArtists = [];
 
     while (rockRandomArtists.length < 4) {
-      // pushes elements inside the array until it has 4 strings
-      let artist = rockArtists[Math.floor(Math.random() * rockArtists.length)]; // select an element from the array with an index between 0 and 7
+      
+      let artist = rockArtists[Math.floor(Math.random() * rockArtists.length)]; 
       if (!rockRandomArtists.includes(artist)) {
-        // checks if the artist is not already present in the array
-        rockRandomArtists.push(artist); // pushes the artist in the array
+       
+        rockRandomArtists.push(artist); 
       }
     }
 
